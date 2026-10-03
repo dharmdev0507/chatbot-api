@@ -1,0 +1,14 @@
+import os
+from langchain_groq import ChatGroq
+from dotenv import load_dotenv
+
+#load environment variable
+load_dotenv()
+
+#groq api key and configure
+groq_api_key=os.getenv("GROQ_API_KEY")
+llm=ChatGroq(
+    api_key=groq_api_key,
+    model="openai/gpt-oss-20b",
+    temperature=0
+)

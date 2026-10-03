@@ -1,0 +1,14 @@
+.env
+.venv/
+node_modules/
+__pycache__/
+*.log
+.vscode/
+.idea/
+data/
+uploads/
+*.db
+API keys
+credentials
+model files
+generated output
